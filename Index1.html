@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-height, initial-scale=1.0">
+    <title>Eugene CV</title>
+    <script type="text/javascript">
+        function show() { document.getElementById('area').style.display = 'block'; }
+        function hide() { document.getElementById('area').style.display = 'none'; }
+    </script>
+</head>
+
+<header>
+    <h1 align="center">Форма Регистрации</h1>
+</header>
+<form>
+    <fieldset>
+        <legend>Данные пользователя</legend>
+        <p><label for="name">Имя </label><input type="text" id="name" placeholder="Валентин"></p>
+        <p><label for="phone">Телефон </label><input type="tel" id="phone" placeholder="+37529123456"></p>
+        <p><label for="email">E-mail </label><input type="email" id="email"placeholder="example@gmail.com"></p>
+        <p><label for="password">Пароль </label><input type="password" id="password"></p>
+    </fieldset>
+    <fieldset>
+        <legend>Информация о пользователе</legend>
+        <h3>Выберете пол:</h3>
+        <p><input type="radio" id ="male" name="gender"><label for="male"> Мужской </label></p>
+        <p><input type="radio" id="female" name="gender"><label for="female"> Женский </label></p>
+
+        <h3>Страна проживания</h3>
+        <select>
+            <option>Беларусь</option> 
+            <option>Россия</option>
+            <option>Украина</option>
+            <option>Латвия</option>
+            <option>Литва</option>
+        </select>
+
+        <h3>Как дела?</h3>
+        <p><input type="radio" id ="good" name="mood"><label for="good"> Хорошо </label></p>
+        <p><input type="radio" id="ok" name="mood"><label for="ok"> Нормально </label></p>
+        <p><input type="radio" id="bad" name="mood"><label for="bad"> Плохо </label></p>
+
+        <p>Ваш отзыв или пожелание:</p>
+        <textarea value="текст" rows=10 cols=50 placeholder="Введите ваш отзыв"></textarea>
+
+    </fieldset>
+
+    <p align="center"><input type="submit" value="Отправить форму">
+    <input type="reset" value="Сбросить форму"></p>
+
+
+    
+</form>
+
+</html>
